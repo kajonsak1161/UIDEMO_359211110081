@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Pane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #ff9100;">
@@ -32,17 +31,17 @@
             </Label>
          </children>
       </Pane>
-      <JFXTextField fx:id="username" focusColor="#a85e0a" labelFloat="true" layoutX="381.0" layoutY="72.0" promptText="username" unFocusColor="#e1a709">
+      <JFXTextField fx:id="username" focusColor="#a85e0a" labelFloat="true" layoutX="381.0" layoutY="64.0" promptText="username" unFocusColor="#e1a709">
          <font>
             <Font name="Forte" size="14.0" />
          </font>
       </JFXTextField>
-      <JFXPasswordField fx:id="password" focusColor="#a85e0a" labelFloat="true" layoutX="383.0" layoutY="106.0" promptText="password" unFocusColor="#e1a709">
+      <JFXPasswordField fx:id="password" focusColor="#a85e0a" labelFloat="true" layoutX="383.0" layoutY="117.0" promptText="password" unFocusColor="#e1a709">
          <font>
             <Font name="Forte" size="14.0" />
          </font>
       </JFXPasswordField>
-      <JFXButton fx:id="btnLogin" layoutX="421.0" layoutY="153.0" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #c56200;" text="Login" textFill="#fcf1f1">
+      <JFXButton fx:id="btnLogin" layoutX="421.0" layoutY="163.0" onAction="#Login" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #c56200;" text="Login" textFill="#fcf1f1">
          <font>
             <Font name="Forte" size="12.0" />
          </font>
