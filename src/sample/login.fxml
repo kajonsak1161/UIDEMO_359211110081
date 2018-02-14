@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #ff9100;">
+         <children>
+            <ImageView fitHeight="94.0" fitWidth="94.0" layoutX="109.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imge/school1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="23.0" layoutY="131.0" text="School Managemaent System" textAlignment="CENTER" textFill="#ccff00" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Forte" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="372.0" text="\@CoppyRight By Kajonsak" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Forte" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="username" focusColor="#a85e0a" labelFloat="true" layoutX="381.0" layoutY="72.0" promptText="username" unFocusColor="#e1a709">
+         <font>
+            <Font name="Forte" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" focusColor="#a85e0a" labelFloat="true" layoutX="383.0" layoutY="106.0" promptText="password" unFocusColor="#e1a709">
+         <font>
+            <Font name="Forte" size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="btnLogin" layoutX="421.0" layoutY="153.0" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #c56200;" text="Login" textFill="#fcf1f1">
+         <font>
+            <Font name="Forte" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="320.0" layoutY="369.0" text="DB Status" textFill="#804e11">
+         <font>
+            <Font name="Forte" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="dbStatus" layoutX="390.0" layoutY="369.0" prefHeight="17.0" prefWidth="200.0" textFill="#09a457" />
+      <Label fx:id="loginStatus" layoutX="372.0" layoutY="22.0" prefHeight="30.0" prefWidth="200.0" textFill="#eb0000" />
+   </children>
+</AnchorPane>
